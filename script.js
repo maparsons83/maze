@@ -55,9 +55,10 @@ function draw(startPos) {
 
 document.addEventListener('keydown', (event) => {
     const keyName = event.key;
-    reset(main);
+    
 
     if (keyName == "ArrowRight") {
+        reset(main);
 
         for (let i = 0; i < map.length; i++) {
 
@@ -73,6 +74,7 @@ document.addEventListener('keydown', (event) => {
                     console.log(newMap)
                 } else if(map[i][playerPos+1] == "F"){
                     alert("you win");
+                    location.reload();
                 } else {
                     var newMap = map;
                 }
@@ -80,6 +82,7 @@ document.addEventListener('keydown', (event) => {
         }
     }
     if (keyName == "ArrowLeft") {
+        reset(main);
 
         for (let i = 0; i < map.length; i++) {
 
@@ -100,6 +103,7 @@ document.addEventListener('keydown', (event) => {
 
     }
     if (keyName == "ArrowUp") {
+        reset(main);
 
         for (let i = 0; i < map.length; i++) {
 
@@ -127,13 +131,16 @@ document.addEventListener('keydown', (event) => {
 
     }
     if (keyName == "ArrowDown") {
-
+        reset(main);
+        label:
         for (let i = 0; i < map.length; i++) {
 
             if (map[i].includes("S")) {
                 let mapSplit = map[i].split('');
                 let rowBelow = map[i+1].split('');
                 let playerPos = map[i].indexOf("S");
+                 console.log("mapSplit--",mapSplit);
+                 console.log("rowBelow-- ",rowBelow);
 
                 if (map[i+1][playerPos] == " ") {
                     mapSplit.splice(playerPos, 1, " ");
@@ -148,7 +155,7 @@ document.addEventListener('keydown', (event) => {
                     var newMap = map;
                 } else {
                     var newMap = map;
-                }
+                } break label;
             }
         }
 

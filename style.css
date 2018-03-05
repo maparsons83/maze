@@ -4,8 +4,8 @@ body {}
 
 main {
     display: flex;
-    width: 210px;
-    height: 150px;
+    width: 420px;
+    height: 300px;
     flex-direction: column;
     margin: auto;
 }
@@ -17,23 +17,23 @@ main {
 
 .wall {
     background-color: black;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
 }
 
 .empty {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
 }
 
 #start {
     background-color: blue;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
 }
 
 .finish {
     background-color: red;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
 }

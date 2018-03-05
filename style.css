@@ -1,0 +1,39 @@
+html {}
+
+body {}
+
+main {
+    display: flex;
+    width: 210px;
+    height: 150px;
+    flex-direction: column;
+    margin: auto;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.wall {
+    background-color: black;
+    width: 10px;
+    height: 10px;
+}
+
+.empty {
+    width: 10px;
+    height: 10px;
+}
+
+#start {
+    background-color: blue;
+    width: 10px;
+    height: 10px;
+}
+
+.finish {
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}

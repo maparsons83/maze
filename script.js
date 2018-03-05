@@ -71,7 +71,7 @@ document.addEventListener('keydown', (event) => {
                     let rejoined = mapSplit.join('');
                     map[i] = rejoined;
                     var newMap = map;
-                    console.log(newMap)
+                    
                 } else if(map[i][playerPos+1] == "F"){
                     alert("you win");
                     location.reload();
@@ -139,8 +139,7 @@ document.addEventListener('keydown', (event) => {
                 let mapSplit = map[i].split('');
                 let rowBelow = map[i+1].split('');
                 let playerPos = map[i].indexOf("S");
-                 console.log("mapSplit--",mapSplit);
-                 console.log("rowBelow-- ",rowBelow);
+                
 
                 if (map[i+1][playerPos] == " ") {
                     mapSplit.splice(playerPos, 1, " ");
@@ -172,4 +171,3 @@ function reset(destination) {
 }
 
 draw(map);
-console.log(main)
